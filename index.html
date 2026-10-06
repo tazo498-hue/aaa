@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image and Audio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    button, select {
+      font-size: 18px;
+      padding: 10px 14px;
+      margin-top: 10px;
+      max-width: 100%;
+    }
+    button { cursor: pointer; }
+    img { display: block; width: 100%; height: auto; border-radius: 12px; }
+    figure { margin: 16px 0; }
+    audio { width: 100%; margin-top: 12px; }
+    button:focus-visible { outline: 3px solid #1463ab; outline-offset: 4px; }
+    .note { color: #465363; font-size: 15px; }
+  </style>
+</head>
+<body>
+  <h1>Image and Audio</h1>
+  <figure>
+    <!-- [추가] src는 그림 파일의 위치, alt는 그림의 대체 설명입니다. -->
+    <img src="assets/images/picture_01.png" alt="A quiet park with trees, a bench and a winding path.">
+    <figcaption>A quiet park.</figcaption>
+  </figure>
+  <!-- [추가] controls는 재생/일시정지/음량 조절기를 표시합니다. -->
+  <!-- 자동 재생하지 않습니다. 사용자가 재생 버튼을 누릅니다. -->
+  <audio controls preload="metadata" src="assets/audio/sound_01.wav">
+    Your browser does not support audio playback.
+  </audio>
+  <p class="note">Transcript: Welcome to our city. There are many interesting places to explore.</p>
+</body>
+</html>
